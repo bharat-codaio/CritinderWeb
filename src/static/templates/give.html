@@ -1,0 +1,200 @@
+<div class="giveCritique" layout="column" layout-align="center center">
+  <section class="get-intro" layout="column" layout-align="center center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m7 l7 left-align">
+          <h2>Help peers get matches!</h2>
+          <p>Critique profile pictures &amp; bios in a few simple steps</p>
+        </div>
+        <div class="col s12 m5 l5 right-align">
+          <span class="faded-headline">Complete Steps Below!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="give-intro left-align">
+    <div class="section-header container left-align">
+      <h3><i class="fa fa-info"></i> Guide</h3>
+    </div>
+    <div class="container">
+      <div class="row card" layout="row" layout-align="center center">
+        <div class="col s2">
+          <i class="fa fa-thumbs-o-up"></i>
+        </div>
+        <div class="col s10 right-align">
+          <p>Means <strong>keep this photo</strong>!</p>
+        </div>
+      </div>
+      <div class="row card" layout="row" layout-align="center center">
+        <div class="col s2">
+          <i class="fa fa-thumbs-o-down"></i>
+        </div>
+        <div class="col s10 right-align">
+          <p>Means <strong>don't use</strong>!</p>
+        </div>
+      </div>
+      <div class="row card" layout="row" layout-align="center center">
+        <div class="col s2">
+          <i class="fa fa-heart-o"></i>
+        </div>
+        <div class="col s10 right-align">
+          <p>Selects the <strong>best photo</strong>!</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="picture-choices left-align">
+    <div class="section-header container left-align">
+      <h3><i class="fa fa-thumbs-up"></i> Approve &amp; Disapprove</h3>
+    </div>
+    <div class="container">
+      <div class="profile-pic-options row">
+        <div class="profile-pic-option col s12 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/1.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(0)" ng-show="vm.toggleGrid[0]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(0)" ng-hide="vm.toggleGrid[0]"></i>
+            </div>
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(0)" ng-show="vm.toggleGrid[0]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(0)" ng-hide="vm.toggleGrid[0]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s12 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/2.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(1)" ng-show="vm.toggleGrid[1]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(1)" ng-hide="vm.toggleGrid[1]"></i>
+            </div>
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(1)" ng-show="vm.toggleGrid[1]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(1)" ng-hide="vm.toggleGrid[1]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s12 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/3.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(2)" ng-show="vm.toggleGrid[2]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(2)" ng-hide="vm.toggleGrid[2]"></i>
+            </div>
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(1)" ng-show="vm.toggleGrid[2]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(2)" ng-hide="vm.toggleGrid[2]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s12 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/4.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(3)" ng-show="vm.toggleGrid[3]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(3)" ng-hide="vm.toggleGrid[3]"></i>
+            </div>
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(3)" ng-show="vm.toggleGrid[3]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(3)" ng-hide="vm.toggleGrid[3]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s12 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/5.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(4)" ng-show="vm.toggleGrid[4]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(4)" ng-hide="vm.toggleGrid[4]"></i>
+            </div>
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(4)" ng-show="vm.toggleGrid[4]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(4)" ng-hide="vm.toggleGrid[4]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s12 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/6.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(5)" ng-show="vm.toggleGrid[5]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(5)" ng-hide="vm.toggleGrid[5]"></i>
+            </div>
+            <div class="col s12 m6 l6">
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(5)" ng-show="vm.toggleGrid[5]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(5)" ng-hide="vm.toggleGrid[5]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="picture-best-choice left-align">
+    <div class="section-header container left-align">
+      <h3><i class="fa fa-heart"></i> Choose Best Picture</h3>
+    </div>
+    <div class="container">
+      <div class="profile-pic-options row">
+        <div class="profile-pic-option col s6 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/1.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12">
+              <i class="fa fa-heart-o" ng-click="vm.pressHeart(0)" ng-show="vm.toggleHeart[0]"></i>
+              <i class="fa fa-heart" ng-click="vm.pressHeart(0)" ng-hide="vm.toggleHeart[0]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s6 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/2.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12">
+              <i class="fa fa-heart-o" ng-click="vm.pressHeart(1)" ng-show="vm.toggleHeart[1]"></i>
+              <i class="fa fa-heart" ng-click="vm.pressHeart(1)" ng-hide="vm.toggleHeart[1]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s6 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/3.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12">
+              <i class="fa fa-heart-o" ng-click="vm.pressHeart(2)" ng-show="vm.toggleHeart[2]"></i>
+              <i class="fa fa-heart" ng-click="vm.pressHeart(2)" ng-hide="vm.toggleHeart[2]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s6 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/4.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12">
+              <i class="fa fa-heart-o" ng-click="vm.pressHeart(3)" ng-show="vm.toggleHeart[3]"></i>
+              <i class="fa fa-heart" ng-click="vm.pressHeart(3)" ng-hide="vm.toggleHeart[3]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s6 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/5.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12">
+              <i class="fa fa-heart-o" ng-click="vm.pressHeart(4)" ng-show="vm.toggleHeart[4]"></i>
+              <i class="fa fa-heart" ng-click="vm.pressHeart(4)" ng-hide="vm.toggleHeart[4]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="profile-pic-option col s6 m2 l2 center-text">
+          <img src="/static/img/profiles/demo/6.jpg" alt="abc">
+          <div class="row z-depth-1">
+            <div class="col s12">
+              <i class="fa fa-heart-o" ng-click="vm.pressHeart(5)" ng-show="vm.toggleHeart[5]"></i>
+              <i class="fa fa-heart" ng-click="vm.pressHeart(5)" ng-hide="vm.toggleHeart[5]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container right-align">
+    <a href="#giveCritique2" class="continue-button button">Continue to Step 2</a>
+  </div>
+</div>

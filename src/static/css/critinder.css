@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,700');
+@import url('https://fonts.googleapis.com/css?family=Average');
+@import url('animate.min.css');
+/* font1: "Work Sans" and includes bold */
+/* font2: "Average" */
+
+/*##############################################
+### Global #####################################
+###############################################*/
+
+/***********************************************
+*** Global // Presets **************************
+***********************************************/
+
+.row, .col {
+  margin: 0;
+  padding: 0;
+}
+
+/***********************************************
+*** Global // Tools ****************************
+***********************************************/
+
+.faded-headline {
+  color: #F6514B;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3em;
+}
+
+/* File Upload */
+
+.thumb {
+  width: 24px;
+  height: 24px;
+  float: none;
+  position: relative;
+  top: 7px;
+}
+
+form .progress {
+  line-height: 15px;
+}
+
+.progress {
+  display: inline-block;
+  width: 100px;
+  border: 3px groove #CCC;
+}
+
+.progress div {
+  font-size: smaller;
+  background: orange;
+  width: 0;
+}
+
+/***********************************************
+*** Global // Themes ***************************
+***********************************************/
+
+/* Typographic Theme */
+
+* {
+  font-family: "Work Sans", Arial, sans-serif;
+}
+
+/* Headings */
+
+h3 {
+  font-family: "Average", serif;
+}
+
+/* Color Theme */
+
+.primary-color {
+  color: #F6514B;
+}
+
+.primary-color-bg {
+  background-color: #F6514B;
+}
+
+/***********************************************
+*** Global // Element Styles *******************
+***********************************************/
+
+/* Link Style */
+
+a {
+  color: #c4403c;
+}
+
+a:hover {
+  color: #F6514B;
+}
+
+/***********************************************
+*** Global // Buttons **************************
+***********************************************/
+
+.button {
+  display: inline-block;
+  padding: 15px;
+}
+
+.continue-button {
+  background-color: #333;
+  color: #fff;
+  margin: 20px 0;
+  padding: 30px;
+}
+
+/***********************************************
+*** Global // Page Position & Transition *******
+***********************************************/
+
+/* Sets Z-Index Order */
+
+body > header { z-index: 9999; }
+.ng-leave     { z-index: 8888; }
+.ng-enter     { z-index: 7777; }
+.page         { z-index: 6666; }
+
+/* Positions Pages */
+
+.page {
+  padding-top: 100px;
+  position: absolute;
+  text-align: center;
+  top:0; bottom:0;
+  width: 100%;
+}
+
+/* Page Transitions */
+
+.ng-enter    { animation:zoomInUp 0.5s both ease-in; }
+.ng-leave    { animation:zoomOutUp 0.5s both ease-in; }
+
+/*##############################################
+### Index ######################################
+###############################################*/
+
+/***********************************************
+*** Index Elements // Overall ******************
+***********************************************/
+
+/* Header Positionin */
+
+body > header {
+  height: 100px;
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%;
+}
+
+/***********************************************
+*** Index Elements // Top Header ***************
+***********************************************/
+
+/* Logo */
+
+.logo a {
+  display: block;
+  height: 100%;
+}
+
+.logo img {
+  height: 50px;
+  margin-top: 10px;
+}
+
+/* Global navbar */
+
+.global-nav {
+  margin-top: 5px;
+  color: #fff;
+}
+
+.global-nav a {
+  font-size: 1.25em;
+  color: #fff;
+}
+
+.global-nav a:hover {
+  background: rgba(0,0,0,0.25);
+  transition-duration: 0.25s;
+  color: #fff;
+}
+
+/***********************************************
+*** Index Elements // Top Navigation ***********
+***********************************************/
+
+/***********************************************
+*** Index Elements // Bottom Footer ************
+***********************************************/
+
+.global-footer {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.global-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.global-footer p:first-of-type {
+  font-size: 1.3em;
+}
+
+/*##############################################
+### Home #######################################
+###############################################*/
+
+/* About Section */
+
+.home-about {
+  padding: 50px 20px;
+}
+
+.home-about .col > * {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* home page sections */
+
+.home-give,
+.home-get {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.home-give .button,
+.home-get .button {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+
+.home-give .button:hover,
+.home-give .button:hover *,
+.home-get .button:hover,
+.home-get .button:hover * {
+  background: #fff;
+  color: #F6514B;
+  transition-duration: 0.25s;
+}
+
+
+.home-give h2,
+.home-give h4,
+.home-get h2,
+.home-get h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.home-give h2,
+.home-get h2 {
+  font-family: "Average", "Century", serif;
+  letter-spacing: 2px;
+  margin: 0 0 20px;
+}
+
+.home-give h4,
+.home-get h4 {
+  margin: 0 0 50px;
+}
+
+.home-give *,
+.home-get * {
+  color: #fff;
+}
+
+.home-give {
+  background-image: url('../img/resources/collage-edit.jpg');
+}
+
+
+/*##############################################
+### getCritique ################################
+###############################################*/
+
+/***********************************************
+*** getCritique // Overall *********************
+***********************************************/
+
+.home-get,
+.get-intro {
+  background-image: url('../img/resources/critique-edit.jpg');
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.get-intro {
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.get-intro * {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.get-intro p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.get-intro a {
+  background: #fff;
+}
+
+/* get page intro */
+
+.section-header {
+  background: #F6514B;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.section-header h3 {
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+/***********************************************
+*** getCritique // First Time ******************
+***********************************************/
+
+/***********************************************
+*** getCritique // Profile *********************
+***********************************************/
+
+/***********************************************
+*** getCritique // Submit Form *****************
+***********************************************/
+
+/* get page pics */
+
+.get-pics .card-action .row {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.get-pics .card-action .col {
+  padding: 0;
+  text-align: center;
+}
+
+.get-pics .card.empty {
+  background: #e5e5e5;
+}
+
+
+.get-pics .add-pic-icon {
+  font-size: 7em;
+}
+
+.get-pics .card.empty .card-title,
+.get-pics .add-pic-icon {
+  color: #b2b2b2 !important;
+}
+
+.get-pics .card-title {
+  font-size: 3em;
+  line-height: 1em;
+  font-family: "Average", serif;
+}
+
+.card-action {
+  padding: 0 !important;
+  border-top: none !important;
+}
+
+.card-action a {
+  color: #F6514B !important;
+  padding: 10px;
+  margin: 0 !important;
+  display: inline-block;
+  width: 100%;
+}
+
+.card-action a:hover {
+  background: #F6514B !important;
+  color: #fff !important;
+}
+
+.get-bios .row,
+.get-context .row {
+  margin: 0 !important;
+}
+
+.bios {
+  background: #fff;
+  padding: 50px 10px;
+}
+
+/* label color */
+.input-field label {
+  color: #a1a1a1 !important;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "Average", serif;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  left: 0 !important;
+  top: 2.15em;
+}
+/* label focus color */
+.input-field textarea:focus + label {
+  background-color: #F6514B !important;
+  color: #fff !important;
+  font-size: 1.15em;
+  top: 1.75em !important;
+}
+/* label underline focus color */
+.input-field textarea:focus {
+  border-bottom: 1px solid #F6514B !important;
+  box-shadow: 0 1px 0 0 #F6514B !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #F6514B;
+}
+
+.character-counter {
+  font-size: 1.5em !important;
+  letter-spacing: 1px;
+  font-family: "Average", serif;
+}
+
+.input-field textarea {
+  font-size: 1.25em !important;
+  padding: 20px 0;
+}
+
+.input-field.col {
+  padding: 0 !important;
+}
+
+/* selection */
+
+.get-context form {
+  padding: 0 !important;
+}
+
+.intention {
+  display: inline !important;
+}
+
+/* submission area */
+.get-submit {
+  background: #333;
+  color: #fff;
+}
+
+.get-submit .row {
+  height: 100px;
+}
+
+.get-submit .row > * {
+  height: 100%;
+}
+
+/***********************************************
+*** getCritique // Submit Conclusion ***********
+***********************************************/
+
+/*##############################################
+### giveCritique ###############################
+###############################################*/
+
+/***********************************************
+*** giveCritique // Overall *********************
+***********************************************/
+
+.giveCritique > section {
+  width: 100%;
+}
+
+.giveCritique .profile-pic-options {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.giveCritique .profile-pic-options .col {
+  margin: 0; padding: 0;
+}
+
+.profile-pic-option > * {
+  text-align: center;
+}
+
+.profile-pic-option > * {
+  width: 90% !important;
+  text-align: center;
+}
+
+.giveCritique .profile-pic-option i {
+  font-size: 2em;
+  background: #fff;
+  color: #333;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/***********************************************
+*** giveCritique // Step 1/3: Select ************
+***********************************************/
+
+.give-intro .row,
+.give-intro .col,
+.profile-pic-option .row,
+.profile-pic-option .col {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.profile-pic-option img {
+  margin: 0 auto !important;
+}
+
+.give-intro .card {
+  box-sizing: border-box;
+  padding: 5px 50px !important;
+  font-size: 2em !important;
+}
+
+/***********************************************
+*** giveCritique // Step 2/3: Pics **************
+***********************************************/
+
+.first-pic-critique,
+.bio-feedback {
+  width: 100%;
+}
+
+.first-pic-critique > .row > h5 {
+  width: 100%;
+}
+
+.first-pic-critique > .row > .col {
+  padding: 10px;
+}
+
+.first-pic-critique > .row > .col > img {
+  width: 100%;
+}
+
+.first-pic-feedback {
+  padding: 30px 20px 20px !important;
+}
+
+/***********************************************
+*** giveCritique // Step 3/3: Bios **************
+***********************************************/
+
+.bio {
+  color: #fff;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+/***********************************************
+*** giveCritique // Conclusion ******************
+***********************************************/
+
+
+/*##############################################
+### Support Files ##############################
+###############################################*/
+
+/***********************************************
+*** About Page *********************************
+***********************************************/
