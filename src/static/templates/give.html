@@ -19,7 +19,7 @@
     <div class="container">
       <div class="row card" layout="row" layout-align="center center">
         <div class="col s2">
-          <i class="fa fa-thumbs-o-up"></i>
+          <i class="fa fa-thumbs-up"></i>
         </div>
         <div class="col s10 right-align">
           <p>Means <strong>keep this photo</strong>!</p>
@@ -27,7 +27,7 @@
       </div>
       <div class="row card" layout="row" layout-align="center center">
         <div class="col s2">
-          <i class="fa fa-thumbs-o-down"></i>
+          <i class="fa fa-thumbs-down"></i>
         </div>
         <div class="col s10 right-align">
           <p>Means <strong>don't use</strong>!</p>
@@ -35,7 +35,7 @@
       </div>
       <div class="row card" layout="row" layout-align="center center">
         <div class="col s2">
-          <i class="fa fa-heart-o"></i>
+          <i class="fa fa-heart"></i>
         </div>
         <div class="col s10 right-align">
           <p>Selects the <strong>best photo</strong>!</p>
@@ -46,7 +46,7 @@
   </section>
   <section class="picture-choices left-align">
     <div class="section-header container left-align">
-      <h3><i class="fa fa-thumbs-up"></i> Approve &amp; Disapprove</h3>
+      <h3><i class="fa fa-thumbs-up"></i> Should I keep this image or not? </h3>
     </div>
     <div class="container">
       <div class="profile-pic-options row">
@@ -54,12 +54,12 @@
           <img src="/static/img/profiles/demo/1.jpg" alt="abc">
           <div class="row z-depth-1">
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(0)" ng-show="vm.toggleGrid[0]"></i>
-              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(0)" ng-hide="vm.toggleGrid[0]"></i>
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelectorUp(0)" ng-show="vm.toggleGridUp[0]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelectorUp(0)" ng-hide="vm.toggleGridUp[0]"></i>
             </div>
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(0)" ng-show="vm.toggleGrid[0]"></i>
-              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(0)" ng-hide="vm.toggleGrid[0]"></i>
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelectorDown(0)" ng-show="vm.toggleGridDown[0]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelectorDown(0)" ng-hide="vm.toggleGridDown[0]"></i>
             </div>
           </div>
         </div>
@@ -67,12 +67,12 @@
           <img src="/static/img/profiles/demo/2.jpg" alt="abc">
           <div class="row z-depth-1">
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(1)" ng-show="vm.toggleGrid[1]"></i>
-              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(1)" ng-hide="vm.toggleGrid[1]"></i>
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelectorUp(1)" ng-show="vm.toggleGridUp[1]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelectorUp(1)" ng-hide="vm.toggleGridUp[1]"></i>
             </div>
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(1)" ng-show="vm.toggleGrid[1]"></i>
-              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(1)" ng-hide="vm.toggleGrid[1]"></i>
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelectorDown(1)" ng-show="vm.toggleGridDown[1]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelectorDown(1)" ng-hide="vm.toggleGridDown[1]"></i>
             </div>
           </div>
         </div>
@@ -80,12 +80,12 @@
           <img src="/static/img/profiles/demo/3.jpg" alt="abc">
           <div class="row z-depth-1">
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(2)" ng-show="vm.toggleGrid[2]"></i>
-              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(2)" ng-hide="vm.toggleGrid[2]"></i>
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelectorUp(2)" ng-show="vm.toggleGridUp[2]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelectorUp(2)" ng-hide="vm.toggleGridUp[2]"></i>
             </div>
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(1)" ng-show="vm.toggleGrid[2]"></i>
-              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(2)" ng-hide="vm.toggleGrid[2]"></i>
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelectorDown(2)" ng-show="vm.toggleGridDown[2]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelectorDown(2)" ng-hide="vm.toggleGridDown[2]"></i>
             </div>
           </div>
         </div>
@@ -93,12 +93,12 @@
           <img src="/static/img/profiles/demo/4.jpg" alt="abc">
           <div class="row z-depth-1">
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(3)" ng-show="vm.toggleGrid[3]"></i>
-              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(3)" ng-hide="vm.toggleGrid[3]"></i>
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelectorUp(3)" ng-show="vm.toggleGridUp[3]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelectorUp(3)" ng-hide="vm.toggleGridUp[3]"></i>
             </div>
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(3)" ng-show="vm.toggleGrid[3]"></i>
-              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(3)" ng-hide="vm.toggleGrid[3]"></i>
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelectorDown(3)" ng-show="vm.toggleGridDown[3]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelectorDown(3)" ng-hide="vm.toggleGridDown[3]"></i>
             </div>
           </div>
         </div>
@@ -106,12 +106,12 @@
           <img src="/static/img/profiles/demo/5.jpg" alt="abc">
           <div class="row z-depth-1">
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(4)" ng-show="vm.toggleGrid[4]"></i>
-              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(4)" ng-hide="vm.toggleGrid[4]"></i>
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelectorUp(4)" ng-show="vm.toggleGridUp[4]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelectorUp(4)" ng-hide="vm.toggleGridUp[4]"></i>
             </div>
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(4)" ng-show="vm.toggleGrid[4]"></i>
-              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(4)" ng-hide="vm.toggleGrid[4]"></i>
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelectorDown(4)" ng-show="vm.toggleGridDown[4]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelectorDown(4)" ng-hide="vm.toggleGridDown[4]"></i>
             </div>
           </div>
         </div>
@@ -119,12 +119,12 @@
           <img src="/static/img/profiles/demo/6.jpg" alt="abc">
           <div class="row z-depth-1">
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelector(5)" ng-show="vm.toggleGrid[5]"></i>
-              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelector(5)" ng-hide="vm.toggleGrid[5]"></i>
+              <i class="fa fa-thumbs-o-up" ng-click="vm.toggleSelectorUp(5)" ng-show="vm.toggleGridUp[5]"></i>
+              <i class="fa fa-thumbs-up" ng-click="vm.toggleSelectorUp(5)" ng-hide="vm.toggleGridUp[5]"></i>
             </div>
             <div class="col s12 m6 l6">
-              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelector(5)" ng-show="vm.toggleGrid[5]"></i>
-              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelector(5)" ng-hide="vm.toggleGrid[5]"></i>
+              <i class="fa fa-thumbs-o-down" ng-click="vm.toggleSelectorDown(5)" ng-show="vm.toggleGridDown[5]"></i>
+              <i class="fa fa-thumbs-down" ng-click="vm.toggleSelectorDown(5)" ng-hide="vm.toggleGridDown[5]"></i>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@
   </section>
   <section class="picture-best-choice left-align">
     <div class="section-header container left-align">
-      <h3><i class="fa fa-heart"></i> Choose Best Picture</h3>
+      <h3><i class="fa fa-heart"></i> What's my best picture? </h3>
     </div>
     <div class="container">
       <div class="profile-pic-options row">

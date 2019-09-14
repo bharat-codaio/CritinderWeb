@@ -14,12 +14,14 @@
     function CritiqueProviderController($rootScope, $scope, $log) {
         var vm = this;
         //vars
-        vm.toggleGrid = [];
         vm.toggleHeart = [];
+        vm.toggleGridUp = [];
+        vm.toggleGridDown = []
         for(var i=0; i<6; i++)
         {
-            vm.toggleHeart[i]=false;
-            vm.toggleGrid[i]= true;
+            vm.toggleGridUp[i]=true;
+            vm.toggleGridDown[i]=true;
+            vm.toggleHeart[i]= true;
         }
 
 
@@ -27,16 +29,27 @@
             for(var i=0; i<6; i++)
             {
                 if(i===index)
-                    vm.toggleHeart[i]=true;
-                else
                     vm.toggleHeart[i]=false;
+                else
+                    vm.toggleHeart[i]=true;
             }
         }
 
         //functions
-        vm.toggleSelector = function (index){
+        vm.toggleSelectorUp = function (index){
             console.log("gonna press " + index);
-            vm.toggleGrid[index] = !(vm.toggleGrid[index]);
+            vm.toggleGridUp[index] = !(vm.toggleGridUp[index]);
+            if(vm.toggleGridDown[index] === vm.toggleGridUp[index]){
+              vm.toggleGridDown[index] = !vm.toggleGridDown[index]
+            }
         }
+
+      vm.toggleSelectorDown = function (index){
+        console.log("gonna press " + index);
+        vm.toggleGridDown[index] = !(vm.toggleGridDown[index]);
+        if(vm.toggleGridDown[index] === vm.toggleGridUp[index]){
+          vm.toggleGridUp[index] = !vm.toggleGridUp[index]
+        }
+      }
     }
 })();
